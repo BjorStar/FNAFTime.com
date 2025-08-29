@@ -1,1 +1,3 @@
-This code is a joke code just to test and improve my coding and website creation skills. Are you ready for Freddy?
+This code is for entertainment and educational purposes. AKA in human language; this is just me messing around with code just to improve. 
+
+Are you ready for Freddy?
