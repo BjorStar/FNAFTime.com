@@ -129,6 +129,19 @@
       <meta charset="UTF-8">
   <title>Papa's Pizzeria</title>
   <script src="ruffle/ruffle.js"></script>
+
+
+<script>
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+    document.getElementById(pageId).style.display = 'block';
+  }
+</script>
+
+
+
+
+    
 </head>
 
 
@@ -164,6 +177,21 @@
             </a>
         </div>
     </div>
+
+
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('menu')">Menu</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+
+    <div id="home" class="page">Welcome to Freddy Fazbear’s!</div>
+    <div id="menu" class="page" style="display:none;">Our delicious pizzas...</div>
+    <div id="contact" class="page" style="display:none;">Contact us here...</div>
+
+
+
+    
     <div class="center-content">
         <div class="warning-title">
             FREDDY FAZBEAR'S PIZZA
@@ -613,6 +641,7 @@
 </body>
 
 </html>
+
 
 
 
