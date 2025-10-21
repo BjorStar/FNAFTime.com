@@ -10,9 +10,9 @@
     <style>
 
   .logo-container {
-    position: absolute;   /* keeps logo in place */
-    top: 15px;         /* distance from the top */
-    left: 15px;        /* distance from the left */
+    position: absolute;   /* absolute håller logon på en plats och försvinner när man scrollar */
+    top: 15px;         /* distans from the top */
+    left: 15px;        /* distans from the left */
 
   }
 
@@ -54,7 +54,7 @@
     font-weight: bold;
     margin-bottom: 10px;
 
-    /* Neon glow for text */
+    /* Neon glow för texten specifikt */
     text-shadow: 0 0 5px white, 
                  0 0 10px red, 
                  0 0 20px red, 
@@ -65,7 +65,7 @@ h2 {
     font-size: 20px;
     font-weight: normal;
 
-    /* Slight glow for subtitle */
+    /* En liten glow till subtitlen */
     text-shadow: 0 0 5px white, 
                  0 0 10px red;
 }
@@ -79,7 +79,7 @@ h2 {
     margin-top: 20px;
   }
   .gallery img {
-    width: 200px; /* bigger thumbnails */
+    width: 200px; /* större thumbnails */
     cursor: pointer;
     border: 3px solid #f9d71c;
     border-radius: 8px;
@@ -91,7 +91,7 @@ h2 {
 
   /* Lightbox overlay */
 .lightbox {
-  display: none; /* hidden until opened */
+  display: none; /* gömd ända tills man öppnar */
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
@@ -101,8 +101,8 @@ h2 {
   z-index: 9999;
 }
   .lightbox img {
-    max-width: 95%;   /* make the zoomed image large */
-    max-height: 90%;  /* but keep it fitting inside the screen */
+    max-width: 95%;   /* gör en zoomad bild större */
+    max-height: 90%;  /* men det här håller den inne i skärmen */
     border: 5px solid #fff;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0,0,0,0.8);
@@ -219,6 +219,13 @@ h2 {
 
 
 
+.center-image {
+  display: block;          /* Makes the image behave like a block element */
+  margin: 10px auto;       /* Auto left/right margins center it */
+  max-width: 300px;        /* Optional: limit size */
+  border: 2px solid #0ff;  /* Optional: glowing border */
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
 
 
 
@@ -379,27 +386,27 @@ h2 {
 
     <div style="color: white;">
 
-<h3>-Fresh, family‑friendly menu: Hand‑tossed pizzas, crispy sides, salads, and sweet treats—made for sharing.</h3>
+<h3>Fresh, family‑friendly menu: Hand‑tossed pizzas, crispy sides, salads, and sweet treats—made for sharing.</h3>
 
 </div>
 
   <div style="color: white;">
 
-<h3>-Live animatronic shows: Freddy and friends perform throughout the day with music, jokes, and crowd participation.</h3>
+<h3>Live animatronic shows: Freddy and friends perform throughout the day with music, jokes, and crowd participation.</h3>
 
 </div>
 
 
       <div style="color: white;">
 
-<h3>-Arcade and prizes: Retro favorites and new hits, plus prize counters that make winning feel extra rewarding.</h3>
+<h3>Arcade and prizes: Retro favorites and new hits, plus prize counters that make winning feel extra rewarding.</h3>
 
 </div>
 
 
       <div style="color: white;">
 
-<h3>-Birthday packages: Stage shout‑outs, themed decor, and dedicated party hosts to keep everything running smoothly.</h3>
+<h3>Birthday packages: Stage shout‑outs, themed decor, and dedicated party hosts to keep everything running smoothly.</h3>
 
 </div>
 
@@ -413,11 +420,15 @@ h2 {
 
 <h3>-Freddy Fazbear: The charismatic leader with a golden voice and a heart (and hat) of showtime.</h3>
 
+        <img src="https://static.wikia.nocookie.net/triple-a-fazbear/images/3/33/A_bear_who_bears_no_introduction2.png" alt="Freddy" class="center-image">
+
 </div>
 
   <div style="color: white;">
 
 <h3>-Bonnie the Bunny: Guitar hero with catchy riffs and high‑energy stage presence.</h3>
+
+      <img src="https://static.wikia.nocookie.net/fivenightsatfreddys/images/9/92/Bonnie_Rabbit.png" alt="Bonnie" class="center-image">
 
 </div>
 
@@ -426,12 +437,16 @@ h2 {
 
 <h3>-Chica the Chicken: Party starter who never forgets the snacks and sing‑along cues.</h3>
 
+          <img src="https://static.wikia.nocookie.net/villains/images/2/26/ChicaVR.png" alt="Chica" class="center-image">
+
 </div>
 
 
       <div style="color: white;">
 
 <h3>-Foxy the Pirate: Adventure-loving rogue with fast beats and fan-favorite antics.</h3>
+
+          <img src="https://static.wikia.nocookie.net/fivenightsatfreddys/images/b/bc/Foxy_Fnaf_1.png" alt="Foxy" class="center-image">
 
 </div>
 
@@ -842,6 +857,7 @@ h2 {
 </body>
 
 </html>
+
 
 
 
